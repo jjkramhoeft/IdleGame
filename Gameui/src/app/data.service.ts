@@ -9,7 +9,7 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  private debug = true;
+  private debug = false;
   private worldApiUrl = 'https://localhost:7210';
   
   constructor(private http: HttpClient) { }
