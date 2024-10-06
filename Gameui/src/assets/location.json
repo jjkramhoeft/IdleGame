@@ -1,0 +1,56 @@
+{
+    "id": 1,
+    "state": 5,
+    "name": "Dead Tree",
+    "description": "a single huge dead tree in the middle of the forest, temperate broadleaf rainforests",
+    "descriptionPromptByLLM": "A gnarled giant stands tall amidst the verdant canopy, its twisted limbs like skeletal fingers grasping for the sky, weathered bark cracked and worn by centuries of elemental fury.",
+    "picturePath": "D:\\VisualStudioProjects\\IdleGame\\Storage\\Data\\Pictures\\Locations\\l00000001.png",
+    "pictureUri": "http://localhost:5278/pictures/l/00000001",
+    "point": {
+      "longitude": 884,
+      "latitude": 748
+    },
+    "box": {
+      "lowerLeftPoint": {
+        "longitude": 0,
+        "latitude": 0
+      },
+      "size": 1000
+    },
+    "associateRegionBox": {
+      "lowerLeftPoint": {
+        "longitude": -100000,
+        "latitude": 0
+      },
+      "size": 100000
+    },
+    "locationTypeKey": 4,
+    "height": 0.26173385977745056,
+    "radius": 0,
+    "population": 0,
+    "slopeValue": 1.7999999523162842,
+    "climate": {
+      "name": "",
+      "predominantWindDirection": {
+        "id": 9,
+        "name": "West",
+        "latitudePart": 0,
+        "longitudePart": -1,
+        "angleInRadians": 3.141592653589793
+      },
+      "stormFrequency": 7.470468688097753e-8,
+      "precipitationAmount": 73.75088500976562,
+      "averageTemperature": 11.089988708496094
+    },
+    "geologyId": 7,
+    "biomId": 31,
+    "age": 0,
+    "hasHabor": false,
+    "critterWeights": {},
+    "animalWeights": {},
+    "beastWeights": {},
+    "monsterWeights": {},
+    "plantWeights": {},
+    "treeWeights": {},
+    "activePersonRequestIds": []
+  }

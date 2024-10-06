@@ -1,0 +1,74 @@
+@use '@angular/material' as mat;
+@import '../../style-varibles.scss';
+
+
+$theme: mat.define-theme((
+  color: (
+    primary: mat.$cyan-palette,
+    tertiary: mat.$orange-palette,  // spring-green  orange   cyan   chartreuse
+  ),
+  typography: (    
+    plain-family: 'Cambria'
+  ),
+  density: (
+    scale: -5
+  )
+));
+
+.characteroptionslistcontainer{    
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.characteroption{
+    display: flex;
+    flex-direction: row;
+    background-color: $cp-light;
+    padding: 5px;
+}
+
+.characteroptioninfo{
+    background-color: #ffffff;
+    flex-grow: 1;
+    padding:5px;
+}
+
+.characterupper{    
+    display: flex;
+    
+    justify-content:space-between;
+    background-color: #ffffff;
+}
+
+.charactername{
+    background-color: #ffffff;
+    padding:5px;
+}
+
+.characterprofession{
+    background-color: #ffffff;
+    padding:5px;
+}
+
+.characterlower{
+    @include mat.chips-color($theme, $color-variant: tertiary);
+    @include mat.chips-typography($theme);    
+    @include mat.chips-density($theme);
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.characteraction{
+    background-color: #ffffff;
+    padding:5px;
+    display: flex;
+    align-items: center;
+}
+
+.characteraction-button{
+    @include mat.button-color($theme, $color-variant: secondary);  
+    @include mat.button-density($theme);
+    @include mat.button-typography($theme);    
+
+}

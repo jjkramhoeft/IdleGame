@@ -1,0 +1,131 @@
+# Generator
+
+1) region points with accosiated locations
+
+abe
+
+
+------
+Location Types
+
+- Inhabited
+  - House
+  - Dwelling
+  - Hut
+  - Cabin
+  - Farm
+  - Mine
+  - Herding camp
+  - Camp site
+  - Tents
+  - Gardtower
+  - Market
+  - Homestead (husmandssted)
+  - Habor
+  - Windmill
+  - Watermill
+  - Sawmill
+  - Forge / Smithy
+  - Plantation
+  - Apple Orchard / Fuit garden
+  - Vineyard
+  - Theater
+  - Lighthouse
+  - Inn / Travern
+  - Maze
+  - library
+  - Water reservoir
+  - Dam
+  - Pier
+  - Hen house / chicken farm
+  - Stable
+  - Brothels
+  - Arena
+  - Cemeteries
+  - Temple
+  - Alter
+  - Monument
+  - Statue
+  - well
+- 
+- Not Inhabited 
+  - Plain (just the Biom)
+  - Man Related Special
+    - Deserted Camp Site
+    - Corpse
+    - Grave
+    - Burial mound
+    - Cemetery
+    - Monument, Statue, Standing stones
+    - Cave Paintings
+    - Alter, Shrine
+    - Bridge
+    - Shipwreck
+    - Broken down wagon
+    - Maze
+    - Well
+    - Road
+    - abandoned Orchard
+    - abandoned Quarry
+    - abandoned Mine
+    - Old battlefield
+    - Dam
+    - Ruins
+    - beacon (signalbål)
+    - cairn (varde)
+  - Nature Related Special
+    - Plants Related
+      - Field of flowers
+      - Glade, Clearing
+      - Ring og Trees (plants)
+      - Single large Tree (plant)
+      - special fuittree
+      - Burned trees
+      - Fallen Tree
+      - Dead Tree
+      - Tree Rot Cave
+      - braided trees (plants)
+    - Animal Related
+      - Critter Related
+        - Mass accuring
+      - Anmimal Related
+        - Corpse
+        - Albino versions
+        - Beaver Dam
+        - Trail
+        - Mutants
+      - Monster Related
+        - Steleton
+    - Landscape Related
+      - Water fall
+      - River, Creek
+      - Spotted lake, colored lake
+      - River Ford (Vadested)
+      - Hot springs, Geyser, Mud Geyser
+      - Eternal Fire pit
+      - Eternal smoke pit
+      - Mountain peak
+      - Pond, Lake
+      - Empty Cave
+      - Sink Hole
+      - Abyss
+      - Rock
+      - luminescent rock/stones veins
+      - Chasm
+      - Crater
+      - Meteor
+      - stalactite cave
+      - Fossils
+    - Geology Related
+      - Minerals
+        - Gold Vein
+        - Gem Stone Vein
+      - Dark
+      - Fertile
+      - Forest
+      - Old
+        - Giant Fossil
+      - Magic
+      - Poor
+      - Plain
+    - 

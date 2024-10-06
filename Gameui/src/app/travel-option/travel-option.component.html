@@ -1,0 +1,27 @@
+<div class="traveloptionslistcontainer">
+    <div *ngFor="let to of traveloptions">
+        <div class="traveloption">
+            <div class="regtraveloption">
+                <div class="traveloptioninfo">
+                    <div class="travelupper">
+                        <div class="traveldirection">{{to.direction.name}}</div>
+                        <div class="traveldistance">{{to.distance}} m</div>
+                        <div *ngIf="!to.hasPreviouslyVisitedB" class="travelnews">New!</div>
+                    </div>
+                    <mat-chip-listbox class="travellower">
+
+                        <mat-chip-option class="travelmode"
+                            *ngFor="let mo of to.travelModes">{{modetext(mo)}}</mat-chip-option>
+
+                    </mat-chip-listbox>
+                </div>
+                <div class="travelaction" >
+                    <button *ngIf="!traveling; Else returning" mat-flat-button class="travelaction-button" (click)="travelClick(to.departAction)">Travel</button>
+                    <ng-template #returning><button mat-flat-button class="travelaction-button" (click)="travelClick(to.departAction)">Return</button></ng-template>
+                </div>
+                
+            </div>
+            <div class="travelprogress" *ngIf="traveling"><mat-progress-bar mode="indeterminate"></mat-progress-bar></div>
+        </div>
+    </div>
+</div>

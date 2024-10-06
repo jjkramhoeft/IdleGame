@@ -1,0 +1,200 @@
+@import '../../style-varibles.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    margin: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 270px 270px 270px ;
+    grid-template-areas:
+        "a b c e"
+        "a b d e"
+        "a . . .";
+}
+
+@media (min-width: 1300px) and (max-width: 1920px) {
+    .parent {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 270px 270px 270px ;
+        grid-template-areas:
+            "a b d "
+            "a b e "
+            "a c e "
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1300px) {
+    .parent {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 270px 270px 270px 270px 270px ;
+        grid-template-areas:
+            "a b "
+            "a b "
+            "a c "
+            "e d "
+            "e . "
+    }
+}
+
+@media (max-width: 750px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 270px 270px 270px 270px 270px 270px 270px ;
+        grid-template-areas:
+            "a"
+            "a"
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+    }
+}
+
+.sec1 {
+    padding: 5px;
+    grid-area: a;
+    background-color: $cp-light;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    margin: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px ;
+    grid-template-areas:
+        "pic pic d3a d3b"
+        "pic pic d3c d3d"
+        "des des des des"
+        "d2  d2  d3e d3f"
+        "d2  d2  lwe lwe"
+        "lpl lpl ltr ltr"
+        "lcr lcr lan lan"
+        "lbs lbs lmo lmo";
+}
+
+.locpic {
+    grid-area: pic;
+}
+
+.locdesc {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    grid-area: des;
+    padding: 5px;
+    background-color: white;
+}
+
+.dethead {
+    font-size: x-small;
+}
+
+.detcont {
+    text-align: right;
+}
+
+.lowkey {
+    color: $cp-lightblue;
+    font-size: small;
+}
+
+.detals-a {
+    grid-area: d3a;
+}
+
+.detals-b {
+    grid-area: d3b;
+}
+
+.detals-c {
+    grid-area: d3c;
+}
+
+.detals-d {
+    grid-area: d3d;
+}
+
+.detals-e {
+    grid-area: d3e;
+}
+
+.detals-f {
+    grid-area: d3f;
+}
+
+.desc2 {
+    grid-area: d2;
+    padding: 5px;
+    background-color: white;
+}
+
+.list-we {
+    grid-area: lwe;
+}
+
+.list-pl {
+    grid-area: lpl;
+}
+
+.list-tr {
+    grid-area: ltr;
+}
+
+.list-cr {
+    grid-area: lcr;
+}
+
+.list-an {
+    grid-area: lan;
+}
+
+.list-be {
+    grid-area: lbs;
+}
+
+.list-mo {
+    grid-area: lmo;
+}
+
+.sec2 {
+    padding: 5px;
+    grid-area: b;
+    background-color: $cp-light;
+}
+
+.sec3 {
+    padding: 5px;
+    grid-area: c;
+    background-color: $cp-light;
+}
+
+.sec4 {
+    padding: 5px;
+    grid-area: d;
+    background-color: $cp-light;
+}
+
+.sec5 {
+    padding: 5px;
+    grid-area: e;
+    background-color: $cp-light;
+}
+
+
+.travel-option-list {
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
+}
+
+
+.travel-option-item {
+    height: 90px;
+}

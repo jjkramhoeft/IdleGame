@@ -1,0 +1,21 @@
+<nav class="tabtop"
+  mat-align-tabs="center"
+  mat-tab-nav-bar
+  mat-stretch-tabs="false"
+  [tabPanel]="tabPanel"
+>
+  @for (link of pageLinks; track link) {
+  <a 
+    mat-tab-link
+    (click)="activePath = link.path"
+    [active]="link.path == activePath"
+    [routerLink]="link.path"
+  >
+  <mat-icon class="primary-icon" svgIcon="{{link.icon}}"></mat-icon>
+    {{ link.label }}
+  </a>
+  }
+</nav>
+<mat-tab-nav-panel #tabPanel>
+  <router-outlet (activate)="onActivate($event.path)"></router-outlet>
+</mat-tab-nav-panel>

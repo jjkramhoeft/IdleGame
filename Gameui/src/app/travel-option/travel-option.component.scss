@@ -1,0 +1,95 @@
+@use '@angular/material' as mat;
+@import '../../style-varibles.scss';
+
+
+$theme: mat.define-theme((
+  color: (
+    primary: mat.$cyan-palette,
+    tertiary: mat.$orange-palette,  // spring-green  orange   cyan   chartreuse
+  ),
+  typography: (    
+    plain-family: 'Cambria'
+  ),
+  density: (
+    scale: -5
+  )
+));
+
+.traveloptionslistcontainer{    
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.traveloption{
+    display: flex;
+    flex-direction: column;
+    background-color: $cp-light;
+    padding: 5px;
+}
+
+.regtraveloption{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $cp-light;
+}
+
+.travelprogress{
+    background-color: green;
+}
+
+
+.traveloptioninfo{
+    background-color: #ffffff;
+    flex-grow: 1;
+    padding:5px;
+}
+
+.travelupper{    
+    display: flex;
+    
+    justify-content: flex-start;
+    background-color: #ffffff;
+}
+
+.traveldirection{
+    background-color: #ffffff;
+    padding:5px;
+}
+
+.traveldistance{
+    background-color: #ffffff;
+    padding:5px;
+}
+
+.travelnews{
+    background-color: #ffffff;
+    color: red;
+    padding:5px;
+}
+
+.travellower{
+    @include mat.chips-color($theme, $color-variant: tertiary);
+    @include mat.chips-typography($theme);    
+    @include mat.chips-density($theme);
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.travelmode{
+    padding: 0px;
+}
+
+.travelaction{
+    background-color: #ffffff;
+    padding:5px;
+    display: flex;
+    align-items: center;
+}
+
+.travelaction-button{
+    @include mat.button-color($theme, $color-variant: secondary);  
+    @include mat.button-density($theme);
+    @include mat.button-typography($theme);    
+
+}

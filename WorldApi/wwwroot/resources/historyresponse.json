@@ -1,0 +1,186 @@
+{
+  "a868608f-41d0-4c69-a780-9d053ce93381": {
+    "prompt": [
+      17,
+      "a868608f-41d0-4c69-a780-9d053ce93381",
+      {
+        "3": {
+          "inputs": {
+            "seed": 650808435902,
+            "steps": 30,
+            "cfg": 5.45,
+            "sampler_name": "euler",
+            "scheduler": "sgm_uniform",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "16",
+              0
+            ],
+            "negative": [
+              "40",
+              0
+            ],
+            "latent_image": [
+              "53",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd3_medium_incl_clips.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "16": {
+          "inputs": {
+            "text": "In this serene glade, sunlight filters through the canopy above, casting dappled shadows on the lush green grass below. The air is filled with the sweet scent of blooming wildflowers, including delicate purple lupines and vibrant yellow buttercups. Tall conifers stand sentinel around the edges, their branches swaying gently in the breeze. A soft carpet of ferns and moss covers the forest floor, creating a sense of tranquility and connection to nature.\n",
+            "clip": [
+              "42",
+              0
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "Positive Prompt"
+          }
+        },
+        "40": {
+          "inputs": {
+            "text": "painting, drawing, text, watermark, border, frame",
+            "clip": [
+              "42",
+              0
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "Negative Prompt"
+          }
+        },
+        "42": {
+          "inputs": {
+            "clip_name1": "clip_g.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "sd3"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "DualCLIPLoader"
+          }
+        },
+        "53": {
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "EmptySD3LatentImage"
+          }
+        }
+      },
+      {},
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_00017_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "a868608f-41d0-4c69-a780-9d053ce93381",
+            "timestamp": 1725711792430
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "3",
+              "4",
+              "8",
+              "9",
+              "16",
+              "40",
+              "42",
+              "53"
+            ],
+            "prompt_id": "a868608f-41d0-4c69-a780-9d053ce93381",
+            "timestamp": 1725711792433
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "a868608f-41d0-4c69-a780-9d053ce93381",
+            "timestamp": 1725711792433
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  }
+}

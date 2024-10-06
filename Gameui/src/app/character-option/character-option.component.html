@@ -1,0 +1,21 @@
+<div class="characteroptionslistcontainer">
+    <div *ngFor="let co of characteroptions">
+        <div class="characteroption">
+                <div class="characteroptioninfo">
+                    <div class="characterupper">
+                        <div class="charactername">{{co.name}}</div>
+                        <div class="characterprofession">{{co.name}} m</div>
+                    </div>
+                    <mat-chip-set class="characterlower" role="list" >
+
+                        <mat-chip  role="listitem" *ngFor="let c of co.chips">{{c}}</mat-chip>
+
+                    </mat-chip-set>
+                </div>
+                <div class="characteraction" >
+                    <button mat-flat-button class="characteraction-button" (click)="talkClick(co.id)">Talk</button>
+                </div>
+                
+        </div>
+    </div>
+</div>

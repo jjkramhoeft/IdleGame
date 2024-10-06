@@ -1,0 +1,405 @@
+@import '../../style-varibles.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    position: relative;
+    width: 100%;
+    height: 1800px;
+    vertical-align: top;
+    --r: 15px;
+    --g: #FCF7EF, #FDEBD2;
+    border-radius: var(--r);
+    padding: calc(var(--r) + 0px);
+    background:
+        radial-gradient(farthest-side at bottom right, var(--g)) top left /var(--r) var(--r),
+        radial-gradient(farthest-side at top right, var(--g)) bottom left /var(--r) var(--r),
+        radial-gradient(farthest-side at bottom left, var(--g)) top right/var(--r) var(--r),
+        radial-gradient(farthest-side at top left, var(--g)) bottom right/var(--r) var(--r),
+        linear-gradient(to top, var(--g)) top /calc(100% - 2*var(--r)) var(--r),
+        linear-gradient(to bottom, var(--g)) bottom/calc(100% - 2*var(--r)) var(--r),
+        linear-gradient(to right, var(--g)) right /var(--r) calc(100% - 2*var(--r)),
+        linear-gradient(to left, var(--g)) left /var(--r) calc(100% - 2*var(--r));
+    background-repeat: no-repeat;
+}
+
+section {
+    position: absolute;
+    background-color: #FCF7EF;
+}
+
+.portrait {
+    width: 300px;
+    height: 300px;
+}
+
+.frame {
+    animation: imageAnimation 108s linear infinite 0s;
+    width: 700px;
+    position: absolute;
+    opacity: 0;
+
+    --r: 10px;
+    --g: #FCF7EF, #fdebd200;
+    border-radius: var(--r);
+    padding: calc(var(--r) + 0px);
+    background:
+        radial-gradient(farthest-side at bottom right, var(--g)) top left /var(--r) var(--r),
+        radial-gradient(farthest-side at top right, var(--g)) bottom left /var(--r) var(--r),
+        radial-gradient(farthest-side at bottom left, var(--g)) top right/var(--r) var(--r),
+        radial-gradient(farthest-side at top left, var(--g)) bottom right/var(--r) var(--r),
+        linear-gradient(to top, var(--g)) top /calc(100% - 2*var(--r)) var(--r),
+        linear-gradient(to bottom, var(--g)) bottom/calc(100% - 2*var(--r)) var(--r),
+        linear-gradient(to right, var(--g)) right /var(--r) calc(100% - 2*var(--r)),
+        linear-gradient(to left, var(--g)) left /var(--r) calc(100% - 2*var(--r));
+    background-repeat: no-repeat;
+}
+
+.day1 {
+    transform: rotate(-9deg);
+    position: absolute;
+    left: 50px;
+    top: 130px;
+}
+
+.day2 {
+    transform: rotate(8deg);
+    position: absolute;
+    width: 300px;
+    top: 200px;
+    right: 460px;
+}
+
+.day3 {
+    transform: rotate(2deg);
+    position: absolute;
+    width: 300px;
+    top: 480px;
+    left: 60px;
+}
+
+.day4 {
+    transform: rotate(-3deg);
+    position: absolute;
+    width: 300px;
+    top: 640px;
+    right: 440px;
+}
+
+.day5 {
+    transform: rotate(-7deg);
+    position: absolute;
+    width: 300px;
+    top: 880px;
+    left: 100px;
+}
+
+.day6 {
+    transform: rotate(8deg);
+    position: absolute;
+    width: 300px;
+    top: 1010px;
+    right: 480px;
+}
+
+.frame:hover {
+    z-index: 555555;
+    border: black;
+
+}
+
+.day1:hover {
+    z-index: 555555;
+    border: black;
+    border-width: 5px;
+}
+
+.frame:over {
+    z-index: 555555;
+    border: black;
+
+}
+
+.day1:over {
+    z-index: 555555;
+    border: black;
+    border-width: 5px;
+}
+
+.day2:hover {
+    z-index: 555555;
+}
+
+.day3:hover {
+    z-index: 555555;
+}
+
+.day4:hover {
+    z-index: 555555;
+}
+
+.day5:hover {
+    z-index: 555555;
+}
+
+.day6:hover {
+    z-index: 555555;
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    11% {
+        opacity: 1;
+    }
+
+    22% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    23% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@mixin white-gradient {
+    background: linear-gradient(to right, rgba(253, 235, 210, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-200px * 23))
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.slider {
+    background: rgb(253, 235, 210);
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    top: 1380px;
+    transform: rotate(8deg);
+    z-index: -1;
+    opacity: 0;
+    animation: fadeInAnimation ease 16s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    &::before,
+    &::after {
+        @include white-gradient;
+        content: "";
+        height: 300px;
+        position: absolute;
+        width: 130px;
+        z-index: 2;
+    }
+
+    &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slide-track {
+        animation: scroll 90s linear infinite;
+        display: flex;
+        width: calc(330px * 23);
+    }
+
+    .slide {
+        height: 300px;
+        width: 330px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .frame {
+        width: 500px;
+        animation: imageAnimation 108s linear infinite 0s;
+    }
+
+    .portrait {
+        width: 200px;
+        height: 200px;
+    }
+
+    .parent {
+        height: 1400px;
+    }
+
+    .day1 {
+        transform: rotate(-10deg);
+        left: 50px;
+        top: 110px;
+    }
+
+    .day2 {
+        transform: rotate(8deg);
+        width: 300px;
+        top: 150px;
+        right: 260px;
+    }
+
+    .day3 {
+        transform: rotate(2deg);
+        width: 300px;
+        top: 360px;
+        left: 60px;
+    }
+
+    .day4 {
+        transform: rotate(-3deg);
+        width: 300px;
+        top: 468px;
+        right: 250px;
+    }
+
+    .day5 {
+        transform: rotate(-7deg);
+        width: 300px;
+        top: 680px;
+        left: 100px;
+    }
+
+    .day6 {
+        transform: rotate(8deg);
+        width: 300px;
+        top: 810px;
+        right: 280px;
+    }
+
+    .slider {
+        top: 1120px;
+        width: 600px;
+        height: 200px;
+
+        &::before,
+        &::after {
+            height: 200px;
+            width: 130px;
+        }
+
+        .slide-track {
+            animation: scroll 90s linear infinite;
+            display: flex;
+            width: calc(230px * 23);
+        }
+
+        .slide {
+            height: 200px;
+            width: 230px;
+        }
+    }
+
+    .texth {
+        top: -180px;
+    }
+}
+
+.texth {
+    position: absolute;
+    top: -160px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.part {
+    color: $cp-darkblue;
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px white; // #FCF7EF;
+    position: relative;
+}
+
+.part1 {
+    position: absolute;
+    left: 10%;
+}
+
+.part1b {
+    position: absolute;
+    font-size: large;
+    left: 8%;
+    top: 30px;
+}
+
+.part2 {
+    position: absolute;
+    left: 15%;
+}
+
+.part2b {
+    position: absolute;
+    top: 30px;
+    font-size: large;
+    left: 17%;
+}
+
+.part3 {
+    position: absolute;
+    left: 7%;
+}
+
+.part3b {
+    position: absolute;
+    top: -30px;
+    font-size: large;
+    left: 8%;
+}
+
+.part4 {
+    position: absolute;
+    left: 21%;
+}
+
+.part4b {
+    position: absolute;
+    top: -30px;
+    font-size: large;
+    left: 17%;
+}

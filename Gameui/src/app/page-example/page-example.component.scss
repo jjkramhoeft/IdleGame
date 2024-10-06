@@ -1,0 +1,38 @@
+
+.primary-button {
+    @include mat.button-typography($theme);
+    @include mat.button-color($theme, $color-variant: primary);
+    @include mat.button-density($theme);
+}
+
+.secondary-button {
+    @include mat.button-typography($theme);
+    @include mat.button-color($theme, $color-variant: secondary);
+    @include mat.button-density($theme);
+}
+
+.tertiary-button {
+    @include mat.button-typography($theme);
+    @include mat.button-color($theme, $color-variant: tertiary);
+    @include mat.button-density($theme);
+}
+
+.error-button {
+    @include mat.button-typography($theme);
+    @include mat.button-color($theme, $color-variant: error);
+    @include mat.button-density($theme);
+}
+
+
+.buttontext {
+    padding-left: 5px;
+}
+
+.main-cont {
+    margin: 5px;
+    padding: 5px;
+    background-color: $cp-light;
+    display: flex;
+    justify-content: space-around;
+
+}

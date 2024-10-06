@@ -1,0 +1,60 @@
+{
+    "id": 46,
+    "state": 5,
+    "name": "Cosgroves' Hunting Cabin",
+    "description": "a hunting cabin in the temperate rainforest",
+    "descriptionPromptByLLM": "Nestled amidst ancient trees adorned with moss and vines, the rustic hunting cabin stands as a beacon of respite amidst the lush, temperate rainforest. Its wooden exterior, weathered by time and elements, exudes an aura of tranquility and warmth. Smoke gently wafts from its stone chimney, inviting weary travelers to unwind after a long day of adventuring through the forest's dense foliage and enchanting landscapes. The cabin's windows, framed by cascading greenery, offer tantalizing glimpses of the mystical world beyond, while within lies a cozy hearth, inviting rest and relaxation in this magical realm.",
+    "picturePath": "D:\\VisualStudioProjects\\IdleGame\\Storage\\Data\\Pictures\\Locations\\l00000046.png",
+    "pictureUri": "https://localhost:7210/pictures/l/00000046",
+    "point": {
+      "longitude": -7576,
+      "latitude": 2038
+    },
+    "box": {
+      "lowerLeftPoint": {
+        "longitude": -8000,
+        "latitude": 2000
+      },
+      "size": 1000
+    },
+    "associateRegionBox": {
+      "lowerLeftPoint": {
+        "longitude": -100000,
+        "latitude": 0
+      },
+      "size": 100000
+    },
+    "locationTypeKey": 10,
+    "height": 0.5142964124679565,
+    "radius": 0,
+    "population": 3,
+    "slopeValue": 0.9035458564758301,
+    "climate": {
+      "name": "",
+      "predominantWindDirection": {
+        "id": 10,
+        "name": "West-southwest",
+        "latitudePart": -0.3826834323650898,
+        "longitudePart": -0.9238795325112867,
+        "angleInRadians": 3.534291735288517
+      },
+      "stormFrequency": 0.0006173709407448769,
+      "precipitationAmount": 49.927940368652344,
+      "averageTemperature": 8.745482444763184
+    },
+    "geologyId": 7,
+    "biomId": 31,
+    "age": 0,
+    "hasHabor": false,
+    "critterWeights": {},
+    "animalWeights": {},
+    "beastWeights": {},
+    "monsterWeights": {},
+    "plantWeights": {},
+    "treeWeights": {},
+    "activePersonRequestIds": [
+      11,
+      12,
+      13
+    ]
+  }

@@ -1,0 +1,306 @@
+[
+    {
+      "pointA": {
+        "longitude": -7576,
+        "latitude": 2038
+      },
+      "boxA": {
+        "lowerLeftPoint": {
+          "longitude": -8000,
+          "latitude": 2000
+        },
+        "size": 1000
+      },
+      "pointB": {
+        "longitude": -7107,
+        "latitude": 3884
+      },
+      "hasPreviouslyVisitedB": false,
+      "boxB": {
+        "lowerLeftPoint": {
+          "longitude": -8000,
+          "latitude": 3000
+        },
+        "size": 1000
+      },
+      "travelModes": [
+        7,
+        4
+      ],
+      "direction": {
+        "id": 4,
+        "name": "North-northeast",
+        "latitudePart": 0.9238795325112867,
+        "longitudePart": 0.3826834323650898,
+        "angleInRadians": 1.1780972450961724
+      },
+      "distance": 1904,
+      "departAction": "https://localhost:7210/characterlocation/depart/1/for-destination/-7107/3884"
+    },
+    {
+      "pointA": {
+        "longitude": -7576,
+        "latitude": 2038
+      },
+      "boxA": {
+        "lowerLeftPoint": {
+          "longitude": -8000,
+          "latitude": 2000
+        },
+        "size": 1000
+      },
+      "pointB": {
+        "longitude": -6162,
+        "latitude": 3431
+      },
+      "hasPreviouslyVisitedB": false,
+      "boxB": {
+        "lowerLeftPoint": {
+          "longitude": -7000,
+          "latitude": 3000
+        },
+        "size": 1000
+      },
+      "travelModes": [
+        7,
+        4
+      ],
+      "direction": {
+        "id": 3,
+        "name": "Northeast",
+        "latitudePart": 0.7071067811865476,
+        "longitudePart": 0.7071067811865476,
+        "angleInRadians": 0.7853981633974483
+      },
+      "distance": 1984,
+      "departAction": "https://localhost:7210/characterlocation/depart/1/for-destination/-6162/3431"
+    },
+    {
+      "pointA": {
+        "longitude": -7576,
+        "latitude": 2038
+      },
+      "boxA": {
+        "lowerLeftPoint": {
+          "longitude": -8000,
+          "latitude": 2000
+        },
+        "size": 1000
+      },
+      "pointB": {
+        "longitude": -6109,
+        "latitude": 2879
+      },
+      "hasPreviouslyVisitedB": true,
+      "boxB": {
+        "lowerLeftPoint": {
+          "longitude": -7000,
+          "latitude": 2000
+        },
+        "size": 1000
+      },
+      "travelModes": [
+        7,
+        4
+      ],
+      "direction": {
+        "id": 2,
+        "name": "East-northeast",
+        "latitudePart": 0.3826834323650898,
+        "longitudePart": 0.9238795325112867,
+        "angleInRadians": 0.39269908169872414
+      },
+      "distance": 1690,
+      "departAction": "https://localhost:7210/characterlocation/depart/1/for-destination/-6109/2879"
+    },
+    {
+      "pointA": {
+        "longitude": -7576,
+        "latitude": 2038
+      },
+      "boxA": {
+        "lowerLeftPoint": {
+          "longitude": -8000,
+          "latitude": 2000
+        },
+        "size": 1000
+      },
+      "pointB": {
+        "longitude": -6876,
+        "latitude": 1980
+      },
+      "hasPreviouslyVisitedB": false,
+      "boxB": {
+        "lowerLeftPoint": {
+          "longitude": -7000,
+          "latitude": 1000
+        },
+        "size": 1000
+      },
+      "travelModes": [
+        7,
+        4
+      ],
+      "direction": {
+        "id": 1,
+        "name": "East",
+        "latitudePart": 0,
+        "longitudePart": 1,
+        "angleInRadians": 0
+      },
+      "distance": 702,
+      "departAction": "https://localhost:7210/characterlocation/depart/1/for-destination/-6876/1980"
+    },
+    {
+      "pointA": {
+        "longitude": -7576,
+        "latitude": 2038
+      },
+      "boxA": {
+        "lowerLeftPoint": {
+          "longitude": -8000,
+          "latitude": 2000
+        },
+        "size": 1000
+      },
+      "pointB": {
+        "longitude": -7018,
+        "latitude": 1179
+      },
+      "hasPreviouslyVisitedB": false,
+      "boxB": {
+        "lowerLeftPoint": {
+          "longitude": -8000,
+          "latitude": 1000
+        },
+        "size": 1000
+      },
+      "travelModes": [
+        7,
+        4
+      ],
+      "direction": {
+        "id": 14,
+        "name": "South-southeast",
+        "latitudePart": -0.9238795325112867,
+        "longitudePart": 0.3826834323650898,
+        "angleInRadians": 5.105088062083414
+      },
+      "distance": 1024,
+      "departAction": "https://localhost:7210/characterlocation/depart/1/for-destination/-7018/1179"
+    },
+    {
+      "pointA": {
+        "longitude": -7576,
+        "latitude": 2038
+      },
+      "boxA": {
+        "lowerLeftPoint": {
+          "longitude": -8000,
+          "latitude": 2000
+        },
+        "size": 1000
+      },
+      "pointB": {
+        "longitude": -8544,
+        "latitude": 1392
+      },
+      "hasPreviouslyVisitedB": false,
+      "boxB": {
+        "lowerLeftPoint": {
+          "longitude": -9000,
+          "latitude": 1000
+        },
+        "size": 1000
+      },
+      "travelModes": [
+        7,
+        4
+      ],
+      "direction": {
+        "id": 10,
+        "name": "West-southwest",
+        "latitudePart": -0.3826834323650898,
+        "longitudePart": -0.9238795325112867,
+        "angleInRadians": 3.534291735288517
+      },
+      "distance": 1163,
+      "departAction": "https://localhost:7210/characterlocation/depart/1/for-destination/-8544/1392"
+    },
+    {
+      "pointA": {
+        "longitude": -7576,
+        "latitude": 2038
+      },
+      "boxA": {
+        "lowerLeftPoint": {
+          "longitude": -8000,
+          "latitude": 2000
+        },
+        "size": 1000
+      },
+      "pointB": {
+        "longitude": -8075,
+        "latitude": 2237
+      },
+      "hasPreviouslyVisitedB": false,
+      "boxB": {
+        "lowerLeftPoint": {
+          "longitude": -9000,
+          "latitude": 2000
+        },
+        "size": 1000
+      },
+      "travelModes": [
+        7,
+        4
+      ],
+      "direction": {
+        "id": 8,
+        "name": "West-northwest",
+        "latitudePart": 0.3826834323650898,
+        "longitudePart": -0.9238795325112867,
+        "angleInRadians": 2.748893571891069
+      },
+      "distance": 537,
+      "departAction": "https://localhost:7210/characterlocation/depart/1/for-destination/-8075/2237"
+    },
+    {
+      "pointA": {
+        "longitude": -7576,
+        "latitude": 2038
+      },
+      "boxA": {
+        "lowerLeftPoint": {
+          "longitude": -8000,
+          "latitude": 2000
+        },
+        "size": 1000
+      },
+      "pointB": {
+        "longitude": -8830,
+        "latitude": 3843
+      },
+      "hasPreviouslyVisitedB": false,
+      "boxB": {
+        "lowerLeftPoint": {
+          "longitude": -9000,
+          "latitude": 3000
+        },
+        "size": 1000
+      },
+      "travelModes": [
+        7,
+        4
+      ],
+      "direction": {
+        "id": 7,
+        "name": "Northwest",
+        "latitudePart": 0.7071067811865476,
+        "longitudePart": -0.7071067811865476,
+        "angleInRadians": 2.356194490192345
+      },
+      "distance": 2197,
+      "departAction": "https://localhost:7210/characterlocation/depart/1/for-destination/-8830/3843"
+    }
+  ]

@@ -1,0 +1,123 @@
+@import '../../style-varibles.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    margin: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 255px 255px 255px 255px;
+    grid-template-areas:
+        "b a d g"
+        "b a d g"
+        "c c e g"
+        "f f e g ";
+}
+
+@media (min-width: 1300px) and (max-width: 1920px) {
+    .parent {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 255px 255px 255px 255px;
+        grid-template-areas:
+            "a d b "
+            "a d b "
+            "c e g "
+            "f e g "
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1300px) {
+    .parent {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 255px 255px 255px 255px 255px;
+        grid-template-areas:
+            "a b "
+            "a b "
+            "d c "
+            "e g "
+            "f g "
+    }
+}
+
+@media (max-width: 750px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 255px 255px 255px 255px 255px 255px 255px 255px 255px;
+        grid-template-areas:
+            "a"
+            "a"
+            "d"
+            "b"
+            "c"
+            "e"
+            "f"
+            "g"
+            "g"
+    }
+}
+
+.sec1 {
+    padding: 5px;
+    grid-area: a;
+    background-color: $cp-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mappic {
+    flex-shrink: 1;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.sec2 {
+    padding: 5px;
+    grid-area: b;
+    background-color: $cp-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3 {
+    padding: 5px;
+    grid-area: c;
+    background-color: $cp-light;
+}
+
+.sec4 {
+    padding: 5px;
+    grid-area: d;
+    background-color: $cp-light;
+}
+
+.sec5 {
+    padding: 5px;
+    grid-area: e;
+    background-color: $cp-light;
+}
+
+.sec6 {
+    padding: 5px;
+    grid-area: f;
+    background-color: $cp-light;
+}
+
+.sec7 {
+    padding: 5px;
+    grid-area: g;
+    background-color: $cp-light;
+}
+
+.travel-option-list {
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
+}
+

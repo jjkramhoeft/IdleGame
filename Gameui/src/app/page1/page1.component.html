@@ -1,0 +1,52 @@
+<main class="parent">
+    <section class="sec1">
+        <div class="locpic"><img width="100%" [src]="location?.pictureUri ?? defaultlocpic" alt={{location?.pictureUri}} class="mappic"></div>
+        <div class="locdesc">{{location?.descriptionPromptByLLM}}</div>
+        <div class="desc2">{{location?.description}}</div>
+        <div class="detals-a">
+            <div class="dethead">Region</div><div class="detcont">??? Kingdom</div>
+            <div class="dethead">Type</div><div class="detcont">{{typetext(location?.locationTypeKey)}}</div>
+            <div class="dethead">Biom</div><div class="detcont">{{biomtext(location?.biomId)}}</div>
+        </div>
+        <div class="detals-b">
+            <div class="dethead">Avg. Temperature</div><div class="detcont">{{location?.climate?.averageTemperature?.toFixed(1)}}</div>
+            <div class="dethead">Precipitation</div><div class="detcont">{{location?.climate?.precipitationAmount?.toFixed(1)}}</div>
+            <div class="dethead">Storm Freq.</div><div class="detcont">{{location?.climate?.stormFrequency?.toFixed(2)}}</div>
+        </div>
+        <div class="detals-c">
+            <div class="dethead">Population</div><div class="detcont">{{location?.population}}</div>
+            <div class="dethead">Habor</div><div *ngIf="location?.hasHabor" class="detcont lowkey">Yes</div>
+            <div class="dethead">Age</div><div class="detcont lowkey">{{location?.age}}</div>
+        </div>
+        <div class="detals-d">
+            <div class="dethead">Geology</div><div class="detcont">{{geologytext(location?.geologyId)}}</div>
+            <div class="dethead">Height</div><div class="detcont">{{location?.height?.toFixed(1)}} m</div>
+            <div class="dethead">Slope</div><div class="detcont">{{location?.slopeValue?.toFixed(2)}}</div>
+        </div>
+        <div class="detals-e">
+            <div class="dethead">-</div><div class="detcont">-</div>
+            <div class="dethead">-</div><div class="detcont">-</div>
+            <div class="dethead">-</div><div class="detcont">-</div>
+        </div>
+        <div class="detals-f">
+            <div class="dethead">-</div><div class="detcont">-</div>
+            <div class="dethead">-</div><div class="detcont">-</div>
+            <div class="dethead">-</div><div class="detcont">-</div>
+        </div>
+        <div class="list-we">weather events</div>
+        <div class="list-pl">plants</div>
+        <div class="list-tr">trees</div>
+        <div class="list-cr">critter</div>
+        <div class="list-ani">animals</div>
+        <div class="list-be">beast</div>
+        <div class="list-mo">monsters</div>
+    </section>
+    <section class="sec2">
+        <cdk-virtual-scroll-viewport class="travel-option-list"  itemSize="50" appendOnly>
+            <div *cdkVirtualFor="let item of items" class="travel-option-item">{{item}}</div>
+        </cdk-virtual-scroll-viewport>
+    </section>
+    <section class="sec3">Region 3</section>
+    <section class="sec4">City Multilocation 4</section>
+    <section class="sec5">Inside Building 5</section>
+</main>

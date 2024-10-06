@@ -1,0 +1,29 @@
+@use '@angular/material' as mat;
+@import '../style-varibles.scss';
+
+
+
+$theme: mat.define-theme((color: (primary: mat.$cyan-palette,
+                tertiary: mat.$orange-palette, // spring-green  orange   cyan   chartreuse
+            ),
+            typography: (plain-family: 'Cambria'
+            ),
+            density: (scale: -5)));
+
+* {
+    box-sizing: border-box;
+}
+
+.tabtop {
+    @include mat.tabs-typography($theme);
+    @include mat.tabs-color($theme, $color-variant: secondary);
+    @include mat.tabs-density($theme);   
+}
+
+.primary-icon {
+    @include mat.icon-color($theme, $color-variant: primary);
+    @include mat.icon-density($theme);
+    
+    margin-right: 5px;
+}
+
