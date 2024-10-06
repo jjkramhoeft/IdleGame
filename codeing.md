@@ -1,8 +1,8 @@
-# Create folder 
+# Create folder
 
-Solution folder IdleGame 
+Solution folder IdleGame
 
-# Rest Api & Model
+## Rest Api & Model
 
 Use console in folder to create and add
 
@@ -18,7 +18,7 @@ Use console in folder to create and add
 
 https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-sln
 
-# Add Project Reference
+## Add Project Reference
 
 Use console
 
@@ -28,11 +28,11 @@ Use console
 
 `cd ..`
 
-# Build
+## Build
 
 `dotnet build`
 
-# More
+## More
 
 `dotnet new classlib -o Storage`
 
@@ -50,11 +50,9 @@ Use console
 
 `dotnet add package Microsoft.EntityFrameworkCore.Sqlite`
 
-
 `dotnet add WorldApi/WorldApi.csproj reference DebugMapGenerator/DebugMapGenerator.csproj`
 
 `dotnet add DebugMapGenerator/DebugMapGenerator.csproj reference Generator/Generator.csproj`
-
 
 `dotnet new classlib -o MapLogistics`
 `dotnet sln add MapLogistics`
@@ -63,8 +61,8 @@ Use console
 `dotnet add MapLogistics/MapLogistics.csproj reference Generator/Generator.csproj`
 `dotnet add WorldApi/WorldApi.csproj reference MapLogistics/MapLogistics.csproj`
 
+## Console App Proj
 
-# Console App Proj
 dotnet new consoleasync -n MyProject
 `dotnet new console -o Janitor`
 `dotnet sln add Janitor`
@@ -73,8 +71,7 @@ dotnet new consoleasync -n MyProject
 `dotnet add Janitor/Janitor.csproj reference Storage/Storage.csproj`
 `dotnet add Janitor/Janitor.csproj reference Generator/Generator.csproj`
 
-
-# Picture Generation with ComfyUI & Stable Diffusion
+## Picture Generation with ComfyUI & Stable Diffusion
 
 https://github.com/comfyanonymous/ComfyUI/issues/930
 
@@ -82,19 +79,14 @@ ComfyUI plain install
 or
 ComfyUiStandalone
 
-# LLM with LM studio and LlaMa
+## LLM with LM studio and LlaMa
 
 https://lmstudio.ai/
 
+## Documetation in Swagger
 
-
-# Documetation in Swagger
 `dotnet add WorldApi/WorldApi.csproj package Swashbuckle.AspNetCore -v 6.6.1`
 
-
-
-
-
-# Extensions
+## Extensions
 
 Added NuGet Gallery for easy installation of AutoGen.Core & AutoGen.LMStudio

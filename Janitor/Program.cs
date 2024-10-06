@@ -18,10 +18,10 @@ int llmPersonCount = 0;
 int comfyPersonCount = 0;
 int worldSeed = 1;
 int playerId = 1;
-bool lmStudioIsOn = true;
-bool comfyIsOn = true;
-bool debugExtremeVariance = true;
-bool skipUninhabitedLocations = false; // only true for debug - will force uninhabited locations to 'Done', to save LLM and Picture run time
+bool lmStudioIsOn = Settings.IsOnLLM;
+bool comfyIsOn = Settings.IsOnComfyUI;
+bool debugExtremeVariance = Settings.ExtremeVariance;
+bool skipUninhabitedLocations = Settings.SkipUninhabitedLocations; 
 Dictionary<Guid, Janitor.ComfyImage> comfyImageQueue = [];
 
 store.InitStore();
